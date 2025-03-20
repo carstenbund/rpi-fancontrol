@@ -3,7 +3,7 @@ Description=Fan Control Service
 After=multi-user.target
 
 [Service]
-ExecStart=/usr/bin/python3 /usr/lib/fancontrol/fan_control.py
+ExecStart=/usr/lib/fancontrol/fan_control.py
 Restart=always
 User=root
 WorkingDirectory=/usr/lib/fancontrol/
