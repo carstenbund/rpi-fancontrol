@@ -3,14 +3,21 @@
 This repository contains the systemd service and configuration for automatic fan control based on CPU temperature.
 
 ## **1. Configuration File**
-Path: `/etc/fancontrol/fan.ini`
+Path: `/etc/fancontrol/fan.conf`
 
 ```ini
+# /usr/lib/fancontrol/fan_control.py
+# uses this config file
+
 [fan]
-max_temp = 50  # Temperature threshold in Celsius
-fan_pin = 14  # GPIO pin for the fan
-cool_duration = 5  # How long the fan stays on (seconds)
-check_interval = 5  # How often to check the temperature (seconds)
+# Temperature threshold in Celsius
+max_temp = 45  
+# GPIO pin for the fan
+fan_pin = 14
+# How long the fan stays on (seconds)
+cool_duration = 60
+# How often to check the temperature (seconds)
+check_interval = 30
 ```
 
 ## **2. Fan Control Script**
