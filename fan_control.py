@@ -1,10 +1,12 @@
+#!/usr/bin/env python3
+
 import lgpio
 import time
 import configparser
 
 # Load configuration
 config = configparser.ConfigParser()
-config.read("/etc/fancontrol/fan.ini")
+config.read("/etc/fancontrol/fan.conf")
 
 # Read settings from config file
 MAX_TEMP = int(config["fan"].get("max_temp", 50))
