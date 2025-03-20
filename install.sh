@@ -13,8 +13,8 @@ mkdir -p /etc/fancontrol
 mkdir -p /usr/lib/fancontrol
 
 # Move configuration file
-cp fancontrol/fan.ini /etc/fancontrol/fan.ini
-chmod 644 /etc/fancontrol/fan.ini
+cp fancontrol/fan.ini /etc/fancontrol/fan.conf
+chmod 644 /etc/fancontrol/fan.conf
 
 # Move Python script
 cp fancontrol/fan_control.py /usr/lib/fancontrol/fan_control.py
