@@ -1,5 +1,7 @@
 # Fan Control System
 
+Concerning CM5 non standart gpio configuration
+
 This repository contains the systemd service and configuration for automatic fan control based on CPU temperature.
 
 ## **1. Configuration File**
